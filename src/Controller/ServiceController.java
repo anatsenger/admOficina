@@ -29,6 +29,20 @@ public class ServiceController extends ClientController{
             }
         }
         System.out.println("|---------------- LISTA DOS SERVIÇOS QUE PRESTAMOS --------------|");
+        System.out.println(" 1 - Revisão Completa;");
+        System.out.println(" 2 - Troca de óleo;");
+        System.out.println(" 3 - Troca de Embreagem;");
+        System.out.println(" 4 - Troca de pastilha de freio;");
+        System.out.println(" 5 - Troca de amortecedor;");
+        System.out.println(" 6 - Troca de ar condicionado;");
+        System.out.println(" 7 - Troca de vela;");
+        System.out.println(" 8 - Limpeza do TBI;");
+        System.out.println(" 9 - Sangria do óleo de freio;");
+        System.out.println(" 10 - Troca de disco de freio;");
+        System.out.println(" 11 - Troca de tensor;");
+        System.out.println(" 12 - Troca de correia dentada;");
+        System.out.println("|----------------------------------------------------------------|");
+
         System.out.println("Qual serviço deseja realizar no carro?");
         int tipoServicos = sc.nextInt();
         List<Servicos> servicosEnum = new ArrayList<>();
