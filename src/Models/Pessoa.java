@@ -1,10 +1,9 @@
 package Models;
 
-public class Mecanico extends Pessoa{
+public class Pessoa {
     private String nome;
-    //salario
 
-    public Mecanico(String nome) {
+    public Pessoa(String nome) {
         this.nome = nome;
     }
 
@@ -15,6 +14,4 @@ public class Mecanico extends Pessoa{
     public void setNome(String nome) {
         this.nome = nome;
     }
-
-
 }

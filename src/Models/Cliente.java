@@ -2,7 +2,7 @@ package Models;
 
 import java.util.List;
 
-public class Cliente {
+public class Cliente extends Pessoa{
     private String nome;
     private String CPF;
     private Endereco endereco;
