@@ -12,7 +12,7 @@ public class Cliente extends Pessoa{
 
 
     public Cliente(String nome, String CPF, Endereco endereco, List<Veiculo> veiculo) {
-        this.nome = nome;
+        super(nome);
         this.CPF = CPF;
         this.endereco = endereco;
         this.veiculo = veiculo;

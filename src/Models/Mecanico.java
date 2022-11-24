@@ -5,7 +5,7 @@ public class Mecanico extends Pessoa{
     //salario
 
     public Mecanico(String nome) {
-        this.nome = nome;
+        super(nome);
     }
 
     public String getNome() {
