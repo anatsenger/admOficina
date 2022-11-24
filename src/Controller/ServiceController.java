@@ -1,10 +1,7 @@
 package Controller;
 
 import Enums.Servicos;
-import Models.Cliente;
-import Models.Mecanico;
-import Models.Servico;
-import Models.Veiculo;
+import Models.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -61,8 +58,8 @@ public class ServiceController extends ClientController{
 
         System.out.println("Qual mecânico ficará responsavel pelo serviço? ");
         String mecanicoNome = sc.next();
-        Mecanico mecanicoService = null;
-        for (Mecanico mecanico : MecanicoController.mecanicos) {
+        Pessoa mecanicoService = null;
+        for (Pessoa mecanico : MecanicoController.mecanicos) {
             if (mecanicoNome.equals(mecanico.getNome())){
                  mecanicoService = mecanico;
             }
@@ -71,7 +68,7 @@ public class ServiceController extends ClientController{
         Double preco = calculaPreco(servicosEnum);
 
 
-        servicosList.add(new Servico(clientService, servicosEnum, veiculoService, mecanicoService, preco));
+        servicosList.add(new Servico(clientService, servicosEnum, veiculoService, (Mecanico) mecanicoService, preco));
         return servicosList;
         }
 
